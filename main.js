@@ -1,27 +1,10 @@
-// Muito utilizado para transfirir dados. Basicamente transforma tudo em string
+// WHILE LOOP
 
-const taskList = [
-  {
-    id: 1,
-    description: 'treinar',
-    isComplete: false
-  },
-  {
-    id: 2,
-    description: 'Ler Inteligência Humilhada',
-    isComplete: true
-  },
-  {
-    id: 3,
-    description: 'Ensaiar músicas',
-    isComplete: false
-  }
-]
+let indice = 0
 
-const taskListJSON = JSON.stringify(taskList)
-console.log(taskListJSON) // Deixa de ser um array
+while (indice < 21) {
+  console.log(`O índice é ${indice}`)
+  indice++
+}
 
-console.log(taskListJSON[7]) // printa o 7° caracter
-
-const taskListReceived = JSON.parse(taskListJSON)
-console.log(taskListReceived)
+console.log(indice)
